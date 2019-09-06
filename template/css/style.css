@@ -74,19 +74,78 @@ body {
 #container {
 
 }
+.logo{
+  height: auto;
+  width: 15%;
+
+}
 .mrgn4{
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
-p{
-  line-height: 2;
-}
+
 header {
-
+display: flex;
+flex-direction: row;
 }
 
-footer {
+.profileName{
+  margin-left: 1%;
+}
 
+h1{
+  letter-spacing: 0.357rem;
+  margin-bottom: 0;
+}
+
+span{
+  font-family: 'Courgette', cursive;
+}
+
+hr{
+overflow: visible; /* For IE */
+padding: 0;
+border: none;
+border-top: medium double #333;
+color: #333;
+text-align: center;
+}
+
+hr::after{
+  content: "§";
+display: inline-block;
+position: relative;
+top: -0.8em;
+font-size: 1.5em;
+padding: 0 0.25em;
+background: #fffff0;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  margin-top: -2em;
+}
+a, li, ul{
+  color: #262626;
+  list-style: none;
+  text-decoration: none;
+}
+a{
+  font-weight: bold;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+li{
+  list-style: none;
+  padding-bottom: .5rem;
+}
+  p{
+    line-height: 2;
+  }
+footer {
+  display: flex;
 }
 
 /*******************************************/
