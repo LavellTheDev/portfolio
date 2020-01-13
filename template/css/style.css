@@ -120,30 +120,42 @@ font-size: 1.5em;
 padding: 0 0.25em;
 background: #fffff0;
 }
+
 .about{
   display: flex;
   flex-direction: column;
   margin-top: -2em;
 }
+
 a, li, ul{
   color: #262626;
   list-style: none;
   text-decoration: none;
 }
+
 a{
   font-weight: bold;
 }
+
+a:hover{
+  color: #fffff0;
+  text-shadow: #4169e1 1px 1px;
+}
+
 ul{
   list-style: none;
   padding-left: 0;
 }
+
 li{
   list-style: none;
   padding-bottom: .5rem;
 }
-  p{
+
+p{
     line-height: 2;
   }
+
 footer {
   display: flex;
 }
