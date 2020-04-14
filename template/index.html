@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-		<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+		<link rel="stylesheet" href="css/glide.core.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto|Courgette&display=swap" rel="stylesheet">
 	</head>
 	<body class="mxWdth mrgnAto">
@@ -46,13 +46,19 @@
 				</a>,
 			</p>
 		</section>
-			<section id="projects">
-					<h2>projects</h2>
-					<ul>
-						<li><a href="#"> project:</a></li>
-						<li><a href="#"> project:</a></li>
-						<li><a href="#"> project:</a></li>
+			<h2>projects</h2>
+			<section class="glide" id="projects">
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide"><a href="#"> TicTacToe:</a></li>
+						<li class="glide__slide"><a href="#"> project:</a></li>
+						<li class="glide__slide"><a href="#"> project:</a></li>
 					</ul>
+				</div>
+				<div class="glide__arrows" data-glide-el="controls">
+						<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-circle-left"></i></button>
+						<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-circle-right"></i></button>
+				</div>
 			</section>
 			<section id="clients">
 					<h2>clients</h2>
@@ -81,5 +87,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+	<script> new Glide('.glide').mount()</script>
 	</body>
 </html>
